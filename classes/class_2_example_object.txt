@@ -1,0 +1,6 @@
+name: 'Antonio B'
+years_experience: 25
+cooking_proficiency: 'Fine Italian Food'
+signature_dish: 'lasagna with homemade noodles'
+
+check_cue (the chef checks the upcoming requests and sees an array ['lasagna', 'cesar salad', 'Italian chicken noodle soup'])

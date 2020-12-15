@@ -13,5 +13,5 @@ needs to boil water for the Ravioli)
 check_cue (the chef checks what menu items have been ordered, if it is a particular chefs
 signature_dish, then he or she will be the one to make it)
 prepare_pastries (the chef that has cooking_proficiency set as 'pastry_chef' will prepare delicious desserts)
-check_dishes _before_serving (the lead chef with the greatest years_experience will check over the other chef's work
+check_dishes_before_serving (the lead chef with the greatest years_experience will check over the other chef's work
 and make sure everything is up to par)
