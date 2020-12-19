@@ -1,17 +1,17 @@
-Class Chef
 
-Attributes:
-name (string)
-years_experience (integer)
-cooking_proficiency ('string')
-signature_dish ('string')
+Class Customer_order
+each customer order is contained within a hash table containing all of their dishes ordered, easily iterable and transfromed into JSON:
+Customer_order ={dish_name => {
+    prep_time_minutes => integer,
+    price => float,
+    ingredients => array,
+    is_available => boolean
+},
+    next dish_name...
+}
 
-Methods:
+check_stock (the waiter checks with the chef to see if the ingredients available returning either true or false for is_available)
 
-boil_water (the chef is preparing his signature dish, Shrimp-and-Lobster Ravioli and
-needs to boil water for the Ravioli)
-check_cue (the chef checks what menu items have been ordered, if it is a particular chefs
-signature_dish, then he or she will be the one to make it)
-prepare_pastries (the chef that has cooking_proficiency set as 'pastry_chef' will prepare delicious desserts)
-check_dishes_before_serving (the lead chef with the greatest years_experience will check over the other chef's work
-and make sure everything is up to par)
+estimate_wait (based on the total prep_time_minutes for the dishes for the table, waiter returns to customer amount of time it should take before their meals are ready to serve)
+
+bill_total (once the customer asks for the check, the waiter returns a bill by adding up the sum of prices for all items ordered)

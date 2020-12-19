@@ -2,6 +2,8 @@ Class Cash_register
 
 Attributes:
 total_money_available (float)
+close_time (string)
+bill_total (float)
 is_open (boolean)
 attendant_name (string)
 can_make_change_for_50 (boolean)
@@ -15,7 +17,7 @@ open_drawer (this changes the boolean attribute is_open to true and allows the c
 withdraw money from the register)
 
 close_register (this shuts down the register for the day and records that the attendant_name
-closed the register at a certain time. It also records how much money should be expected in the drawer)
+closed the register at a certain time. It also records total_money_available )
 
 need_more_change (this informs the clerk that it requires additional change to complete the transaction. For example, it
 might return a false for can_make_change_for_50)

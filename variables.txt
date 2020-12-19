@@ -5,5 +5,5 @@ num2 = 12
 num7 = 31
 quotient = num7 / num2
 songs = ['string1', 'string2']
-songs = songs[1..-1]
+songs.pop()
 food.length

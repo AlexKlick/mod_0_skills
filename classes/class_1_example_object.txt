@@ -3,9 +3,16 @@ total_money_available: 346.12
 is_open: false
 attendant_name: 'Carl W'
 can_make_change_for_50: true
+bill_total: $68.17
 
 make_change(100, 68.17) The register takes in $100 to pay a toal bill of $68.17
  and prompts the clerk to return $31.83 to the customer. It also adds that to the
  register total_money_available, bringing that total to $377.95.
 
- 
+open_drawer (Carl puts in the total for the bill and the amount of money given, and the is_open variable is set to true and the register opens)
+
+close_register (at 9 PM Carl shuts down the register. The register records that the amount total_money_available is $377.95. )
+
+need_more_change (at the start of the day, the register has only $20 in it. Someone is paying $50 for a bill of $25.71. The register returns flase to can_make_change_for_50 and prompts Carl to get more change from the safe)
+
+
