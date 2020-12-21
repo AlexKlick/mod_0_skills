@@ -1,17 +1,14 @@
+Class Drinks
 
-Class Customer_order
-each customer order is contained within a hash table containing all of their dishes ordered, easily iterable and transfromed into JSON:
-Customer_order ={dish_name => {
-    prep_time_minutes => integer,
-    price => float,
-    ingredients => array,
-    is_available => boolean
-},
-    next dish_name...
-}
+Attributes:
 
-check_stock (the waiter checks with the chef to see if the ingredients available returning either true or false for is_available)
+capacity_ml (integer)
+alcohol_content (float)
+current_amount_ml (integer)
+has_ice (boolean)
 
-estimate_wait (based on the total prep_time_minutes for the dishes for the table, waiter returns to customer amount of time it should take before their meals are ready to serve)
+Method:
 
-bill_total (once the customer asks for the check, the waiter returns a bill by adding up the sum of prices for all items ordered)
+fill_glass  (takes capacity_ml - current_amount and adds that amount to the glass)
+add_shot (adds 1 30 mL shot to the beverage increasing alcohol_content proportionally)
+add_ice (changes has_ice from false to true, icreases current_amount_ml by 50)

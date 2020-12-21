@@ -1,15 +1,14 @@
-Customer_order: 
-'Sally J's order'={'lasgana' => {
-    prep_time_minutes => 30,
-    price => 19.99,
-    ingredients => ['pasta', 'tomato sauce','mushrooms','meat'],
-    is_available => true
-    }, 'lentil soup' =>{prep_time_minutes: 2, price: 3.99, ingredients:['chicken broth', 'lentils','curry','cumin','onion','tomato'],
-    is_available=> true}
-}
+Object: "Coca Cola"
 
-check_stock (the waitress goes to the chef, who returns a value of true for both items. They can be served)
+Attributes:
 
-estimate_wait (since Sally ordered lasagna, she will have to wait 30 minutes before being served, soup will be ready soon.)
+capacity_ml: 500
+alcohol_content: 0
+current_amount_ml: 0
+has_ice: false
 
-bill_total (the waitress gives Sally the bill for 3.99 + 19.99 for a total of $23.98)
+Methods:
+
+add_shot: alcohol_content = 30, current_amount = 30
+add_ice: has_ice = true, current_amount_ml = 80
+fill_glass: current_amount_ml = 500
